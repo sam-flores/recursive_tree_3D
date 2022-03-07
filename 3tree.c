@@ -81,8 +81,6 @@ void G_line3(double x1, double y1, double z1,
     					zbuf[(int)(xp)][(int)(yp)] = z;
               G_rgb(1, .55, 1); // set color to pink
     					G_point(xp, yp);
-							// G_display_image();
-
     		}
     	}
     }
@@ -169,7 +167,10 @@ int main(){
       fnum += 10;
     }else if(q == 65361){ // transform eye -
       fnum -= 10;
-
-    }
+    }else if(q == 119){
+			len += 5;
+		}else if(q == 115){
+			len -= 5;
+		}
 }
 }
