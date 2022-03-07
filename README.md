@@ -1,1 +1,4 @@
 # recursive_tree_3D
+
+
+This program renders a recursively branching tree that gives the user control of minimum length termination, delta rotation of current versus previous branch, and z coordinate of the eye to change perspective on the entire tree in 3-space. The first task of this project was to produce a 2D recursively branched tree. From there, I brought that 2D tree into 3-space. Then, I made the tree actually fold in three different directions, so that the result was not simply a plane of branches but a legitimately 3D tree that branches independently in all 3 dimensions. The process of creating this tree involved interpreting it into a math problem. I used matrices to scale, rotate, and translate points from object space to world space to eye space, applied a parameterization of lines, and a linear transformation to the points in x-y-z space to get the object to display on a 2D screen.
